@@ -1,0 +1,174 @@
+nav {
+  justify-content: space-between;
+
+  > * {
+    flex: 1;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
+  .sign {
+    justify-content: flex-end;
+  }
+}
+
+.hero {
+  justify-content: space-between;
+
+  &-text {
+    h1 {
+      margin-block: 0.5rem;
+    }
+  }
+}
+
+.container-star {
+  margin-right: 1rem;
+  gap: 0.3rem;
+}
+
+.container-tick {
+  gap: 0.3rem;
+}
+
+.portfolio {
+  h2 {
+    max-width: 30rem;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .time {
+    background: no-repeat center/contain url("/Assets/time.svg");
+  }
+
+  .code {
+    background: no-repeat center/contain url("/Assets/code.svg");
+  }
+
+  .all-sizes {
+    background: no-repeat center/contain url("/Assets/allSizes.svg");
+  }
+}
+
+.diversify {
+  background-color: $purple;
+  color: white;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 10px;
+
+  .text {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto 0;
+
+    p {
+      color: white;
+    }
+
+    a {
+      background-color: white;
+      color: $purple;
+    }
+  }
+
+  .image {
+    flex: 1;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid $paragraph;
+  border-radius: 3px;
+  padding: 2rem;
+  min-height: 18.5rem;
+  min-width: 25rem;
+
+  a {
+    display: block;
+    text-align: center;
+    border: 1px solid $paragraph;
+    border-radius: 3px;
+    padding-block: 1rem;
+  }
+
+  .container-image {
+    display: flex;
+    margin-bottom: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .image {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  .sarah {
+    background: no-repeat center/contain url("/Assets/User\ Avatar.svg");
+  }
+
+  .mathew {
+    background: no-repeat center/contain url("/Assets/User\ Avatar\ 2.svg");
+  }
+
+  .janice {
+    background: no-repeat center/contain url("/Assets/User\ Avatar\ 32.svg");
+  }
+}
+
+.footer {
+  display: flex;
+
+  .bold {
+    color: black;
+  }
+
+  a {
+    margin-bottom: 0.5rem;
+    color: $paragraph;
+  }
+
+  .col-logo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-sitemap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-resources {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-company {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-portfolios {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

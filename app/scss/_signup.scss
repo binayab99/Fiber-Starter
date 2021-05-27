@@ -1,0 +1,141 @@
+.signup {
+  display: flex;
+  height: 100vh;
+
+  .logo {
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  h2 {
+    position: relative;
+    font-size: 2.5rem;
+  }
+
+  a {
+    color: $purple;
+  }
+
+  &-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+
+    p {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 31.5rem;
+
+      label {
+        font-weight: bold;
+        margin-block: 0.5rem;
+      }
+
+      input {
+        font-size: inherit;
+        font-family: inherit;
+        padding-block: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+
+        &:focus {
+          outline: none;
+        }
+
+        &[type="text"],
+        &[type="email"],
+        &[type="password"],
+        &[type="checkbox"] {
+          padding-left: 1rem;
+          border: 1px solid $paragraph;
+        }
+
+        &[type="checkbox"] {
+          transform: scale(130%);
+        }
+
+        &[type="submit"] {
+          border: none;
+          background-color: $purple;
+          color: white;
+          font-weight: bold;
+          margin-top: 1rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .container-password {
+      display: flex;
+      position: relative;
+
+      #password {
+        width: 100%;
+      }
+    }
+
+    .eye {
+      position: absolute;
+      top: 17%;
+      left: 90%;
+      height: 30px;
+      width: 30px;
+      background: no-repeat center/contain url("/Assets/hide\ password.svg");
+      z-index: 2;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .container-terms {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+  }
+
+  &-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $purple;
+    color: white;
+    padding: 5rem;
+
+    img {
+      padding-block: 3rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: white;
+      max-width: 35rem;
+    }
+
+    .bullets {
+      display: flex;
+      gap: 0.5rem;
+
+      div {
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+}
